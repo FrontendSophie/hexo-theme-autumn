@@ -1,0 +1,23 @@
+<section class="posts">
+    <% page.posts.each(function (post) { %>
+        <article class="post">
+            <h1 class="post-title">
+                <a href="<%- url_for(post.path) %>">
+                    <%= post.title %>
+                </a>
+            </h1>
+
+            <p class="post-date">
+                <%- date(post.date, " YYYY-MM-DD ") %>
+            </p>
+            <div class="post-content ">
+                <%- post.excerpt %>
+                    <a href="<%- url_for(post.path) %>" class="more-link">Continue reading</a>
+            </div>
+        </article>
+        <% }) %>
+</section>
+<aside class="category ">
+    <%- partial('_partial/category') %>
+</aside>
+<%- partial('_partial/paginator') %>

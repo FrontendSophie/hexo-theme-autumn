@@ -1,0 +1,10 @@
+<h1>Categories</h1>
+<ul>
+    <% site.categories.each(function (cat) { %>
+        <li>
+            <a href="<%- url_for(cat.path) %>">
+                <%= cat.name %>
+            </a>
+        </li>
+        <% }) %>
+</ul>
