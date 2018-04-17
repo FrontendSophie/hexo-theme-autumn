@@ -5,7 +5,7 @@
   margin: 0 0 4.5em
   padding: 0 0 3em
 
-  &:after
+  &::after
     content: ''
     display: block
     background: url('../../img/button.svg') no-repeat -46px top / 132px 35px
@@ -15,24 +15,44 @@
     left: 50%
     top: 100%
     transform: translate(-50%, -18px)
+  
+  .post-cat
+    margin: 0 0 5px
+    a
+      font: 700 13px Lato-Bold
+      color: #f78769
+      text-decoration: none
+      transition: .3s
+      text-transform: upperCase
+      letter-spacing: 1px
+      &:hover
+        color: #777
 
   .post-title
     margin: 0 0 .5em
-    &:after
+    font: 1.953em Lora 
+    color: #777
+    &::after
       content: ""
       display: block
       margin: .5em auto
       width: 20%
       height: 2px
-      background-color: #f3f3f3
+      background-color: #f3f3f3  
     a
-      font: 1.953em Lora
-      text-decoration: none
       color: #777
+      text-decoration: none    
 
   .post-date
+    padding: 0
+    list-style: none
     color: #bbb
     font: 14px/1.6 Lato
+    li 
+      display: inline-block
+      &:first-child::after
+        content: "\00B7"
+        margin: 0 .75em
 
   .post-content
     position: relative

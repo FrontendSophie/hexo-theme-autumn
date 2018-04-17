@@ -17,17 +17,27 @@
       font: 18px Lora
       color: #bbb
 
-  p 
+  .links 
     height: 40px
     margin: 2.25em auto 4.5em
     border-top: 1px dashed #ddd
     border-bottom: 1px dashed #ddd
-    font: 700 13px/40px Lato-Bold
+    font: 700 13px Lato-Bold
     text-transform: uppercase
     letter-spacing: 1px
-    a
-      color: #777
+    ul 
       text-decoration: none
-      transition: .3s
-      &:hover
-        color: #f78769
+      padding: 0
+      li
+        display: inline-block
+        &:first-child::after
+          content: "\00B7"
+          margin: 0 .75em
+        &:last-child::after 
+          content: ''
+        a
+          color: #777
+          text-decoration: none
+          transition: .3s
+          &:hover
+            color: #f78769

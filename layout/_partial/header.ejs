@@ -8,7 +8,15 @@
         <%= config.subtitle %>
     </h2>
 
-    <p>
-        <a href="">ABOUT</a>
-    </p>
+    <nav class="links">
+        <ul>
+            <% for (name in theme.social) { %>
+                <li>
+                    <a href="<%- url_for(theme.social[name]) %>">
+                        <%- name %>
+                    </a>
+                </li>
+                <% } %>
+        </ul>
+    </nav>
 </header>

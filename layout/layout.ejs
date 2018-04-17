@@ -8,6 +8,17 @@
                 <main class="main">
                     <%- body %>
                 </main>
+                <aside class="aside">
+                    <section class="aside-section">
+                        <%- partial('_widget/category') %>
+                    </section>
+                    <section class="aside-section">
+                        <%- partial('_widget/archive') %>
+                    </section>
+                    <section class="aside-section tag">
+                        <%- partial('_widget/tag') %>
+                    </section>
+                </aside>
         </div>
 
     </body>
