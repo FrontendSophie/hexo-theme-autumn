@@ -1,3 +1,5 @@
-<h1>Categories</h1>
+<% if (theme.widgets.category) { %>
+    <h1>Categories</h1>
 
-<%- list_categories({show_count: false}) %>
+    <%- list_categories({show_count: false}) %>
+<% } %>

@@ -1,3 +1,19 @@
+# Nav
 social:
   Github: https://github.com/FrontendSophie
   LinkedIn: https://www.linkedin.com/in/frontendsophie/
+
+# Background image, color
+background: 'url(http://osly086qe.bkt.clouddn.com/button-bg.png) #f3f3f3'
+
+# Favicon
+favicon: http://osly086qe.bkt.clouddn.com/favicon.ico
+
+# SEO
+keywords: 'hexo, autumn'
+
+# Widgets, enable at least one
+widgets:
+  category: enabled
+  archive: enabled
+  tag: enabled

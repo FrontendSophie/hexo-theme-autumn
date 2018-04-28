@@ -1,9 +1,9 @@
 .aside
   overflow: hidden
+  width: 25%
+  float: right
 
 .aside-section 
-  width: 245px
-  float: right
   margin: 0 0 3em
   h1
     font: 1.25em/1.2 Lora
@@ -40,7 +40,11 @@
   li
     display: inline-block
     border: none
-    margin-right: 10px
+    margin: 0 10px 0 0
     a
       border: 1px dashed #ddd
       padding: 4px
+
+@media screen and (max-width: 1015px) 
+  .aside
+    width: 100%

@@ -4,21 +4,29 @@
 @import "_widget/aside"
 
 body 
-  background: url('../img/button-bg.png') #f3f3f3  repeat left top
   font-size: 1rem
   line-height: 1.6
+  margin: 0
 
 .container 
   max-width: 1142px
+  width: 80%
   box-sizing: border-box
-  padding: 3em 5em
+  padding: 3em 5%
   background: white
   margin: 3em auto
   overflow: hidden
 
   .main
-    width: 622px
+    width: 70%
     float: left
   
+@media screen and (max-width: 1015px) 
+  .container .main
+    width: 100%
 
-
+@media screen and (max-width: 640px) 
+  .container
+    margin: 3em 0 0
+    width: 100%
+    padding: 1.75em

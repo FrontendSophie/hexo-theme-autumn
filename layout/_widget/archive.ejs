@@ -1,3 +1,5 @@
-<h1>Archives</h1>
+<% if (theme.widgets.archive) { %>
+    <h1>Archives</h1>
 
-<%- list_archives({type:"yearly", format: "YYYY . MM", show_count: false}) %>
+    <%- list_archives({type:"yearly", format: "YYYY . MM", show_count: false}) %>
+<% } %>

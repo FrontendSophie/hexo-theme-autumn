@@ -7,7 +7,7 @@
     a
       color:#f78769
       text-decoration: none
-      font: 700 3.5rem Lora-Bold
+      font: 700 3rem Lora-Bold
       transition: .3s
       &:hover
         color: #bbb
@@ -41,3 +41,45 @@
           transition: .3s
           &:hover
             color: #f78769
+
+  .social-button
+    display: none
+
+@media screen and (max-width: 640px) 
+  .header 
+    .title 
+      a
+        font-size: 2.5rem
+    .links
+      border: none
+
+    .social-links 
+      display: none
+      margin-top: 9px
+      padding-top: 9px !important
+      text-align: left
+      border-top: 1px dashed #ddd
+
+    .social-button
+      display: block
+      margin: 0 auto
+      padding: .75em 1em
+      border: 1px dashed #fff
+      outline: 5px solid #bbb
+      background: #bbb
+      font: 700 13px Lato-Bold
+      color: #fff
+      text-transform: upperCase
+            
+      &::before 
+        content: ''
+        background: url('../../img/menu.svg')
+        display: inline-block
+        width: 16px
+        height: 16px
+        margin-right: 3px
+        vertical-align: -3px
+
+      &:focus, &:active
+        background: #f78769
+        outline: 5px solid #f78769
