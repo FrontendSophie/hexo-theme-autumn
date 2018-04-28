@@ -26,10 +26,10 @@
         // for mobile menu
         $(function() {
             $('.social-button').click(function() {
-                if ($('.social-links').is(':hidden')) {
-                    $('.social-links').show()
+                if ($('.social-links').hasClass('hide-links')) {
+                    $('.social-links').removeClass('hide-links')
                 } else {
-                    $('.social-links').hide()
+                    $('.social-links').addClass('hide-links')
                 }
             })
         })
