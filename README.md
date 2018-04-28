@@ -1,5 +1,3 @@
-![mmt](http://osly086qe.bkt.clouddn.com/hexo-theme-autumn.png)
-
 # hexo-theme-autumn
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
@@ -7,6 +5,7 @@
 
 > Recreate to salute one classic and elegant wordpress theme — `button`.  
 
+![mmt](http://osly086qe.bkt.clouddn.com/hexo-theme-autumn.png)
 
 ## Demo
 [preview](http://ssnowy.coding.me/demo-autumn/)
