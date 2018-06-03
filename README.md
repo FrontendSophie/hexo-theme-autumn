@@ -11,8 +11,9 @@
 [preview](http://ssnowy.coding.me/demo-autumn/)
 
 ## Usage
-1. Download, extract and put into `themes` folder
-2. Open main config file `_config.yml` and update `theme: hexo-theme-autumn`
+1. Download, extract and put into `themes` folder  
+2. Open main config file `_config.yml` and update `theme: hexo-theme-autumn`  
+3. Tips: Use `<!-- more -->` for abstract
 
 ## Plugins
 [hexo-infinite-scroll](https://github.com/FrontendSophie/hexo-infinite-scroll)  
