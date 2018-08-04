@@ -53,6 +53,21 @@
       &:first-child::after
         content: "\00B7"
         margin: 0 .75em
+  .post-cover
+    position: relative
+    user-select: none
+    &:after
+      position: absolute
+      content: ''
+      width: 82%
+      height: 100%
+      top: 0
+      left: 50%
+      transform: translateX(-50%)
+      box-shadow:0 0 40px 10px #ffffff inset
+    img
+      max-width: 80%
+      border-radius: 10px
 
   .post-content
     position: relative
@@ -76,3 +91,6 @@
       transition: .5s
       &:hover
         box-shadow: none
+    img
+      max-width: 100%
+      border-radius: 4px

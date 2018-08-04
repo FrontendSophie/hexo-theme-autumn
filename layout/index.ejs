@@ -1,3 +1,14 @@
+<%
+    function getPostCover(post) {
+        var content = post.content
+        var regex = /<img src="(\S+)"/
+        var result = regex.exec(content)
+
+        if (result && result[1]) {
+            return result[1]
+        }
+    }
+%>
 <section class="posts">
     <% page.posts.each(function (post) { %>
         <article class="post">
@@ -22,6 +33,11 @@
                             <%= config.author %>
                         </li>
                     </ul>
+                    <% if (theme.auto_cover && getPostCover(post)){%>
+                        <div class="post-cover">
+                            <img src="<%- getPostCover(post) %>">
+                        </div>
+                    <%}%>
                     <div class="post-content ">
                         <%- post.excerpt %>
                             <a href="<%- url_for(post.path) %>" class="more-link">Continue reading</a>
