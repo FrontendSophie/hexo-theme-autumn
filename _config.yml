@@ -17,3 +17,6 @@ widgets:
   category: enabled
   archive: enabled
   tag: enabled
+
+# Set the first image in post to cover
+auto_cover: true

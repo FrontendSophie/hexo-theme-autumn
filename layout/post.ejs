@@ -1,5 +1,5 @@
 <article class="post">
-    <% site.categories.each(function (cat) { %>
+    <% page.categories.each(function (cat) { %>
         <h4 class="post-cat">
             <a href="<%- url_for(cat.path) %>">
                 <%= cat.name %>
