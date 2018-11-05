@@ -4,10 +4,10 @@ social:
   LinkedIn: https://www.linkedin.com/in/frontendsophie/
 
 # Background image, color
-background: 'url(http://osly086qe.bkt.clouddn.com/button-bg.png) #f3f3f3'
+background: 'url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3'
 
 # Favicon
-favicon: http://osly086qe.bkt.clouddn.com/favicon.ico
+favicon: https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/favicon.ico
 
 # SEO
 keywords: 'hexo, autumn'
