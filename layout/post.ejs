@@ -1,23 +1,25 @@
 <article class="post">
+    <% if (page.categories){%>
     <% page.categories.each(function (cat) { %>
-        <h4 class="post-cat">
-            <a href="<%- url_for(cat.path) %>">
-                <%= cat.name %>
-            </a>
-        </h4>
-        <%  }) %>
-            <h2 class="post-title">
-                <%= page.title %>
-            </h2>
-            <ul class="post-date">
-                <li>
-                    <%- date(page.date, "YYYY-MM-DD") %>
-                </li>
-                <li>
-                    <%= config.author %>
-                </li>
-            </ul>
-            <div class="post-content">
-                <%- page.content %>
-            </div>
+    <h4 class="post-cat">
+        <a href="<%- url_for(cat.path) %>">
+            <%= cat.name %>
+        </a>
+    </h4>
+    <%  }) %>
+    <% } %>
+    <h2 class="post-title">
+        <%= page.title %>
+    </h2>
+    <ul class="post-date">
+        <li>
+            <%- date(page.date, "YYYY-MM-DD") %>
+        </li>
+        <li>
+            <%= config.author %>
+        </li>
+    </ul>
+    <div class="post-content">
+        <%- page.content %>
+    </div>
 </article>

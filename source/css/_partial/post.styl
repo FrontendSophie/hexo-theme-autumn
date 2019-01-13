@@ -17,7 +17,14 @@
     transform: translate(-50%, -18px)
   
   .post-cat
+    display: inline-block
     margin: 0 0 5px
+    &:first-of-type::after
+      content: "\00B7"
+      margin: 0 .75em
+      color: #f78769
+    &:last-of-type::after 
+      content: ''
     a
       font: 700 13px Lato-Bold
       color: #f78769
