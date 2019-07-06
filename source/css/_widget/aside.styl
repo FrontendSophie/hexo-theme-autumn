@@ -3,6 +3,28 @@
   width: 25%
   float: right
 
+.close
+  display: none
+  position: absolute
+  right: 1.5em
+  top: 1em
+  width: 24px
+  height: 24px
+  opacity: 0.3
+  &:hover 
+    opacity: 1
+  &:before, &:after 
+    position: absolute
+    left: 10px
+    content: ' '
+    height: 24px
+    width: 2px
+    background-color: #333
+  &:before 
+    transform: rotate(45deg)
+  &:after
+    transform: rotate(-45deg)
+
 .aside-section 
   margin: 0 0 3em
   h1
@@ -47,4 +69,29 @@
 
 @media screen and (max-width: 1015px) 
   .aside
-    width: 100%
+    display: none
+    overflow-y: auto
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 2
+    width: 28%
+    height: 100vh
+    padding: 3em 20px 0
+    background-color: #fff
+    box-shadow: 1px 1px 3px #ddd
+    .close
+      display: block
+
+
+@media screen and (max-width: 640px) 
+  .aside
+    width: calc(100% - 40px)
+    box-shadow: none
+    .close
+      width: 32px
+      height: 32px
+      &:before, &:after 
+        left: 15px
+        height: 33px
+

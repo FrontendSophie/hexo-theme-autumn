@@ -2,24 +2,25 @@
 <html>
 <%- partial('_partial/head') %>
 
-    <body style="background: <%- theme.background %>">
-        <div class="container">
-            <%- partial('_partial/header') %>
-                <main class="main">
-                    <%- body %>
-                </main>
-                <aside class="aside">
-                    <section class="aside-section">
-                        <%- partial('_widget/category') %>
-                    </section>
-                    <section class="aside-section">
-                        <%- partial('_widget/archive') %>
-                    </section>
-                    <section class="aside-section tag">
-                        <%- partial('_widget/tag') %>
-                    </section>
-                </aside>
-        </div>
-    </body>
+<body style="background: <%- theme.background %>">
+    <div class="container">
+        <%- partial('_partial/header') %>
+        <main class="main">
+            <%- body %>
+        </main>
+        <aside class="aside">
+            <div class="close"></div>
+            <section class="aside-section">
+                <%- partial('_widget/category') %>
+            </section>
+            <section class="aside-section">
+                <%- partial('_widget/archive') %>
+            </section>
+            <section class="aside-section tag">
+                <%- partial('_widget/tag') %>
+            </section>
+        </aside>
+    </div>
+</body>
 
 </html>

@@ -41,50 +41,76 @@
           transition: .3s
           &:hover
             color: #f78769
-
-  .social-button
-    display: none
   
-  .hide-links
-    display: block
+  .ipad-menu
+    display: none
+    position: fixed
+    top: 4em
+    left: -1px
+
+  .mobile-menu
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    width: calc(100% - 3em)
+    padding: 0 1.5em
+    height: 3em
+    z-index: 1
+    box-shadow: 0px 1px 5px #ddd
+    h3
+      a
+        color:#f78769
+        text-decoration: none
+        font: 700 1.6rem Lora-Bold
+        text-shadow: 1px 1px #fff, 2px 2px #f78769
+        &:hover
+          color: #bbb
+
+  .menu
+    padding: .5em 1em
+    border: 1px dashed #fff
+    outline: 5px solid #bbb
+    background: #bbb
+    font: 700 14px Lato-Bold
+    color: #fff
+    text-transform: upperCase
+          
+    &::before 
+      content: ''
+      background: url('https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/menu.svg')
+      display: inline-block
+      width: 16px
+      height: 16px
+      margin-right: 3px
+      vertical-align: -3px
+
+    &:focus, &:active
+      background: #f78769
+      outline: 3px solid #f78769
+
+@media screen and (max-width: 1015px)
+  .header
+    .ipad-menu
+      display: block
 
 @media screen and (max-width: 640px) 
   .header 
     .title 
       a
         font-size: 2.5rem
-    .links
-      border: none
 
-    .social-links 
-      margin-top: 9px
-      padding-top: 9px !important
-      text-align: left
-      border-top: 1px dashed #ddd
-
-    .hide-links
+    .ipad-menu
       display: none
 
-    .social-button
-      display: block
-      margin: 0 auto
-      padding: .75em 1em
-      border: 1px dashed #fff
-      outline: 5px solid #bbb
-      background: #bbb
-      font: 700 13px Lato-Bold
-      color: #fff
-      text-transform: upperCase
-            
-      &::before 
-        content: ''
-        background: url('https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/menu.svg')
-        display: inline-block
-        width: 16px
-        height: 16px
-        margin-right: 3px
-        vertical-align: -3px
+    .mobile-menu 
+      display: flex
+      justify-content: space-between
+      align-items: center
+      .menu
+        padding: .2em .5em
+        font: 700 12px Lato-Bold
+        outline: 3px solid #bbb
 
-      &:focus, &:active
-        background: #f78769
-        outline: 5px solid #f78769
+      
+      

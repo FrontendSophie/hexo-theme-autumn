@@ -1,5 +1,16 @@
 <header class="header">
-    <h1 class="title">
+    <nav class="mobile-menu" style="background: <%- theme.background %>">
+        <h3 class="invisibile">
+            <a href="<%- url_for() %>" class="logo">
+                <%= config.title %>
+            </a>
+        </h3>
+        <button class="menu">menu</button>
+    </nav>
+
+    <button class="ipad-menu menu">menu</button>
+
+    <h1 class="title" id="main-title">
         <a href="<%- url_for() %>" class="logo">
             <%= config.title %>
         </a>
@@ -8,18 +19,15 @@
         <%= config.subtitle %>
     </h2>
 
-    <nav class="links">
-        <button class="social-button">
-            menu
-        </button>
-        <ul class="social-links hide-links">
+    <div class="links">
+        <ul>
             <% for (name in theme.social) { %>
-                <li>
-                    <a href="<%- url_for(theme.social[name]) %>">
-                        <%- name %>
-                    </a>
-                </li>
-                <% } %>
+            <li>
+                <a href="<%- url_for(theme.social[name]) %>">
+                    <%- name %>
+                </a>
+            </li>
+            <% } %>
         </ul>
-    </nav>
+    </div>
 </header>
