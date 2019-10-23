@@ -13,8 +13,8 @@
 
 ## Usage
 
-1. Download, extract and put into `themes` folder
-2. Open main config file `_config.yml` and update `theme: hexo-theme-autumn`
+1. `git clone https://github.com/FrontendSophie/hexo-theme-autumn.git themes/autumn`
+2. Open main config file `_config.yml` and update `theme: autumn`
 3. Tips: Use `<!-- more -->` for abstract
 
 ## Plugins
